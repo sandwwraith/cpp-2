@@ -41,8 +41,10 @@ public:
     void push_back(uint32_t elem);
     void pop_back();
     size_t size() const;
-    size_t& back();
-    size_t const& back() const;
+
+    uint32_t &back();
+
+    uint32_t const &back() const;
 
 };
 #endif //BIGINT_OPT_VECTOR_H

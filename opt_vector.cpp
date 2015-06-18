@@ -135,7 +135,7 @@ size_t opt_vector::size() const
     return _size;
 }
 
-size_t &opt_vector::back()
+uint32_t &opt_vector::back()
 {
     if (big_dick)
     {
@@ -145,7 +145,7 @@ size_t &opt_vector::back()
     return single_elem;
 }
 
-size_t const &opt_vector::back() const
+uint32_t const &opt_vector::back() const
 {
     if (big_dick) return big->data.back();
     else return single_elem;
