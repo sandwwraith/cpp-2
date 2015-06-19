@@ -61,7 +61,13 @@ private:
     big_integer& flip_bytes(bool flip_sign = false);
     big_integer& convert();
 
-    void remove_zeroes();
+    inline void remove_zeroes() __attribute__ ((always_inline))
+    {
+        while (this->data.size() > 1 && this->data.back() == 0)
+        {
+            this->data.pop_back();
+        }
+    }
 
 public:
     int compare_to(big_integer const& other) const;

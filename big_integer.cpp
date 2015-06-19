@@ -710,11 +710,3 @@ uint32_t big_integer::div_long_short(uint32_t x)
     remove_zeroes();
     return static_cast<uint32_t> (carry);
 }
-
-void big_integer::remove_zeroes()
-{
-    while (this->data.size() > 1 && this->data.back() == 0)
-    {
-        this->data.pop_back();
-    }
-}
