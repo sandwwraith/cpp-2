@@ -7,8 +7,8 @@
 #define BIGINT_OPT_VECTOR_H
 
 #include <vector>
+#include <stdint.h>
 #include <iosfwd>
-#include <limits>
 
 struct mvector
 {

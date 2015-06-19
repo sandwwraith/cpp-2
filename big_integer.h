@@ -2,6 +2,7 @@
 #define BIG_INTEGER_H
 
 #include <iosfwd>
+#include <stdint.h>
 #include <vector>
 #include <limits>
 #include "opt_vector.h"
