@@ -28,11 +28,11 @@ void opt_vector::detach()
 {
     if (big->link_count > 1)
     {
-        mvector *old = big;
-        big = new(std::nothrow) mvector;
-        big->data = old->data;
-        big->link_count = 1;
-        old->link_count--;
+        mvector *newV = new mvector;
+        newV->data = big->data;
+        newV->link_count = 1;
+        big->link_count--;
+        std::swap(newV, big);
     }
 }
 
