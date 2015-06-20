@@ -61,7 +61,7 @@ private:
     big_integer& flip_bytes(bool flip_sign = false);
     big_integer& convert();
 
-    inline void remove_zeroes() __attribute__ ((always_inline))
+    void remove_zeroes() __attribute__ ((always_inline))
     {
         while (this->data.size() > 1 && this->data.back() == 0)
         {

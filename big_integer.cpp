@@ -8,7 +8,6 @@ big_integer::big_integer()
 {
     sign = true;
     data.resize(1);
-    data[0] = 0;
 }
 
 big_integer::big_integer(big_integer const &other)
